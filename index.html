@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Stop Bullying</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bullying.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="bullying.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">Stop Bullying</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="jumbotron container-fluid imagemInicial" id="inicio">
+    <div class="container text-center">
+        <h1 class="bemVindo">Bem vindo</h1>
+        <h2 class="inspiracao">
+            <script type="application/javascript">
+                escreverInspiracao();
+            </script>
+        </h2>
+        <div class="spaceTop">
+            <a href="reportar.html" class="btn btn-primary btn-lg btn-xl">Conte-nos sua história</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+    <h3>Desbrave algumas histórias</h3><br>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+    </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+            <p>Some text..</p>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+    </div>
+</div><br><br>
+
+<div class="modal fade login" id="loginModal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog login animated">
+        <div class="modal-content loginModalContent">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content text-center">
+                        <button class="loginBtn loginBtn--facebook btn-xl">
+                            Facebook
+                        </button>
+                        <hr/>
+                        <button class="loginBtn loginBtn--google btn-xl">
+                            Google
+                        </button>
+                    <div class="error"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<div class="modal fade login" id="loginModalBackup" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog login animated">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <div class="box">
+                    <div class="content">
+                        <div class="social">
+                            <a class="circle github" href="#">
+                                <i class="fa fa-github fa-fw"></i>
+                            </a>
+                            <a id="google_login" class="circle google" href="#">
+                                <i class="fa fa-google-plus fa-fw"></i>
+                            </a>
+                            <a id="facebook_login" class="circle facebook" href="#">
+                                <i class="fa fa-facebook fa-fw"></i>
+                            </a>
+                        </div>
+                        <div class="division">
+                            <div class="line l"></div>
+                            <span>or</span>
+                            <div class="line r"></div>
+                        </div>
+                        <div class="error"></div>
+                        <div class="form loginBox">
+                            <form method="" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content registerBox" style="display:none;">
+                        <div class="form">
+                            <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                <input class="btn btn-default btn-register" type="button" value="Create account" name="commit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="forgot login-footer">
+                            <span>Looking to
+                                 <a href="javascript: showRegisterForm();">create an account</a>
+                            ?</span>
+                </div>
+                <div class="forgot register-footer" style="display:none">
+                    <span>Already have an account?</span>
+                    <a href="javascript: showLoginForm();">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<footer class="container-fluid text-center">
+    <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
